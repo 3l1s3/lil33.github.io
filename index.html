@@ -8,9 +8,9 @@
 
 header, nav, main, footer, figure, figcaption { display: block; }
 body { font-family: 'Oregano', cursive;
-      background-image: url("leather.gif");
-	  background-repeat: repeat;
-	  margin: 0;
+       background-image: url("leather.gif");
+	   background-repeat: repeat;
+	   margin: 0;
 }
 #wrapper { background-color: #FFFFFF; 
            color: #000000;
@@ -20,9 +20,9 @@ body { font-family: 'Oregano', cursive;
 		   border: 2px solid;
 		   border-radius: 25px;
 } 
-#current { color: #000000;
+.current { color: #000000;
 }
-#past { color: #A9A9A9;
+.past { color: #A9A9A9;
 }
 header { background-color: #000000;
          color: #FFFFFF;
@@ -48,6 +48,9 @@ h2 { color: #000000;
 h3 { color: #A9A9A9; 
      font-family: 'Oregano', cursive;
 	 font-size: 160%;
+}
+p { font-family: 'Oregano', cursive;
+	font-size: 140%;
 }
 nav { float: left;
 	  width: 160px;
@@ -158,11 +161,11 @@ footer { font-size:70%;
     </ul>
   </nav>
   <main role="main">
-  		<div id="current"><h2>Week Two</h2>
+  		<div current><h2>Week Two</h2>
     		<p>Lorem ipsum dolor sit amet consectetuer</p>
     	</div>
-    	<div id="past"><h3>Week One</h3>
-    		<p><div class="responsive">
+    	<div past><h3>Week One</h3>
+    		<p>Lorem ipsum dolor sit amet consectetuer<div class="responsive">
  				<div class="img">
  			 		<a target="_blank" href="ppleCardSketches.jpg">
     					<img src="ppleCardSketches.jpg" alt="People Card Sketches" width="200" height="200">
@@ -170,7 +173,7 @@ footer { font-size:70%;
   					<div class="desc">People Card Sketches</div>
 				</div>
 			</div>
-    		Lorem ipsum dolor sit amet consectetuer</p>
+    		</p>
   		</div>
   </main>
   <footer><p></p>
@@ -178,4 +181,3 @@ footer { font-size:70%;
 </div>
 </body>
 </html>
-
