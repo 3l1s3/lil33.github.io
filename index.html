@@ -24,6 +24,20 @@
   </nav>
   <main role="main">
   <div class="current"><h2 class="current">Week Five</h2>
+  <div class="responsive">
+ 				<div class="img">
+ 			 		<a target="_blank" href="images/nodeError.jpg">
+    					<img src="images/nodeError.jpg" alt="Node Error Screen-shot" width="200" height="200">
+  					</a>
+  					<div class="desc">Node Error Screen-shot</div>
+				</div>
+        </div>
+  <h3>What I accomplished today (20 JUL): the class exercise... <a href="input-to-background-color.html" target="_blank">here. (Need to be connected to Arduino board.)</a></h3>
+    <dl>
+      <dt>What information did I need to complete the exercise--Arduino Uno board, etc.</dt>
+        <dd></dd>
+      <dt>What did I learn?</dt>
+        <dd>If the node arduino.js is allowed to time-out, it will throw an error message about writing to the COM; however, the node must be killed; then re-started. It won't work if it is re-started after it has timed-out.<br>Also, refining the input generation from the light-emitting diode needs to be done in generateInput.js vs. the script in input-to-background-color.html<br>Also, see below...</dd>
   <h3>What I accomplished today (18 JUL + *20 JUL): the class exercise... <a href="inputVelocity.html" target="_blank">here.</a></h3>
     <dl>
       <dt>What information did I need to complete the exercise--data model, schema, which application-programming interfaces (APIs)?</dt>
@@ -37,7 +51,7 @@
         <dt>Then start building.</dt>
         <dd>Alec and Shaunalynn showed me how to use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank">the Fetch API </a>and <a href="http://cors.io/" target="_blank">work around </a>the "No 'Access-Control-Allow-Origin' header...."</dd>
         <dt>I had to figure-out how to grab the variables and insert them into the code.</dt>
-        <dd>I had never used <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON" target="_blank">JSON. </a>I found <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse" target="_blank">the JSON.parse method. </a>(Which, as it turns-out, has nothing to do with what I wanted it to do! *So, Alec showed me how to modify the code so that it will redraw the circles based upon the varable distance between the sum of coordinates redrawn every second.</dd>
+        <dd>I had never used <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON" target="_blank">JSON. </a>I found <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse" target="_blank">the JSON.parse method. </a>(Which, as it turns-out, has nothing to do with what I wanted it to do! *So, Alec showed me how to modify the code so that it will redraw the circles every second; based upon the successive differences between the sums of coordinates each time they are fetched (every second) from the ISS API. I wanted the circles to be dynamically redrawn thus; I had been trying to do it with JSON.parse--not understanding that it was just parsing the strings as opposed to identifying the latitude and longitude. However, it had appeared to have been working due to the frequency of redrawing.</dd>
       </dl>
       </div>
   <div class="past"><h2 class="past">Week Four</h2>
