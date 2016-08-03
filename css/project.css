@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+#background {
+      background: url(../images/background_01.gif) 0px 0px / 137px 100% no-repeat, 
+            url(../images/background_02.gif) 137px 0px / 136px 100% no-repeat, 
+            url(../images/background_03.gif) 273px 0px / 137px 100% no-repeat,
+            url(../images/background_04.gif) 410px 0px / 136px 100% no-repeat, 
+            url(../images/background_05.gif) 546px 0px / 137px 100% no-repeat,
+            url(../images/background_06.gif) 683px 0px / 137px 100% no-repeat, 
+            url(../images/background_07.gif) 820px 0px / 136px 100% no-repeat,
+            url(../images/background_08.gif) 956px 0px / 137px 100% no-repeat, 
+            url(../images/background_09.gif) 1093px 0px / 136px 100% no-repeat,
+            url(../images/background_10.gif) 1229px 0px / 137px 100% no-repeat; 
+            height: 768px;
+            width: 100%;
+            background-attachment: fixed;
+            }
+
+div#preload { 
+      display: none;
+      }
+body {
+      background-color: #FFFFFF;
+      color: #000000;
+      font: italic bold 0.875em Georgia, serif;
+      }
+//img {
+//     width: auto%;
+//      height: 100%;
+//     }
+#keyboard {
+      display: block;
+      margin: auto;
+      //width: 40%;
+      } 
+#ant {
+      background-image: url(../images/ant.png);
+      width: 500px;         
+      height: 188px;
+      position: absolute;
+      top: 600px;
+      right: 0px;
+      }
+#butterfly {
+      background-image: url(../images/butterfly.png);
+      width: 344px;
+      height: 400px;
+      position: absolute;
+      top: 200px;
+      right: 200px;
+      }
+#grasshopper {
+      background-image: url(../images/grasshopper.png);
+      width: 500px;
+      height: 364px;
+      position: absolute;
+      top: 400px;
+      right: 900px;
+      }        
+#ladyBug {
+      background-image: url(../images/ladyBug.png);
+      width: 500px;
+      height: 318px;
+      position: absolute;
+      top: 500px;
+      right: 500px;
+      }
+           
+    
