@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+    div.cat {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        border-radius: 50%;
+        float: left;
+        background-image: url(https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    div.dog {
+        width: 150px;
+        height: 150px;
+        background-color: black;
+        border-radius: 50%;
+        float: left;
+        background-image: url(http://animalia-life.com/data_images/dog/dog2.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    </style>
+</head>
+
+<body>
+
+    <script>
+    // A function to make a shape
+    var makeCatShape = function(i) {
+    	// By making a `div.cat`
+        var divCat = document.createElement('div');
+        divCat.classList.add("cat");
+        // Setting its `data-attribute`
+        divCat.setAttribute('data-reading', i);
+        // And sticking it in the document
+        document.body.appendChild(divCat);
+    };
+     // A separate function to render the cat shapes
+      var renderCatShapes = function() {
+     	// Grab the divs
+    	var catDivs = document.querySelectorAll('div.cat');
+    	// Go through each of them
+    	catDivs.forEach(function(catDiv) {
+    		// Grab its `data-reading` attribute
+    		var reading = catDiv.getAttribute('data-reading');
+    		// And set its width and height accordingly
+    		catDiv.style.width = reading + 'px';
+    		catDiv.style.height = reading + 'px';
+    	});
+    };
+    // Actually make 52 cat shapes
+    var div = document.createElement('div'); 
+    for (var i = 0; i < 52; i++) {
+        makeCatShape(i);
+    }
+    // And then render them all
+    renderCatShapes();
+    
+// A function to make another shape
+    var makeDogShape = function(j) {
+    	// By making a `div.dog`
+        var divDog = document.createElement('div');
+        divDog.classList.add("dog");
+        // Setting its `data-attribute`
+        divDog.setAttribute('data-reading', j);
+        // And sticking it in the document
+        document.body.appendChild(divDog);
+    };
+    // Another function to render the dog shapes
+    var renderDogShapes = function() {
+    	// Grab the divs
+    	var dogDivs = document.querySelectorAll('div.dog');
+    	// Go through each of them
+    	dogDivs.forEach(function(dogDiv) {
+    		// Grab its `data-reading` attribute
+    		var reading = dogDiv.getAttribute('data-reading');
+    		// And set its width and height accordingly
+    		dogDiv.style.width = reading + 'px';
+    		dogDiv.style.height = reading + 'px';
+    	});
+    };   
+    // Actually make 51 dog shapes
+     for (var j = 51; j > 0; j--) {
+          makeDogShape(j);
+    }
+    // And then render them all
+    renderDogShapes();
+    
+    </script>
+</body>
+
+</html>

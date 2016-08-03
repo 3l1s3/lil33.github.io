@@ -1,111 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Project</title>
-  <style>
-    #background {
-      background: url(images/background_01.gif) 0px 0px / 137px 100% no-repeat, 
-            url(images/background_02.gif) 137px 0px / 136px 100% no-repeat, 
-            url(images/background_03.gif) 273px 0px / 137px 100% no-repeat,
-            url(images/background_04.gif) 410px 0px / 136px 100% no-repeat, 
-            url(images/background_05.gif) 546px 0px / 137px 100% no-repeat,
-            url(images/background_06.gif) 683px 0px / 137px 100% no-repeat, 
-            url(images/background_07.gif) 820px 0px / 136px 100% no-repeat,
-            url(images/background_08.gif) 956px 0px / 137px 100% no-repeat, 
-            url(images/background_09.gif) 1093px 0px / 136px 100% no-repeat,
-            url(images/background_10.gif) 1229px 0px / 137px 100% no-repeat; 
-            height: 768px;
-            width: 100%;
-            background-attachment: fixed;
-            }
-    body {
-      background-color: #FFFFFF;
-      color: #000000;
-      font: italic bold 0.875em Georgia, serif;
-      }
-    img {
-      width: auto%;
-      height: 100%;
-      }
-    #keyboard {
-      display: block;
-      margin: auto;
-      width: 40%;
-      }
-    #ant {
-      width: 500px;
-      height: 188px;
-      position: absolute;
-      top: 600px;
-      right: 0px;
-      }
-    #butterfly {
-      width: 344px;
-      height: 400px;
-      position: absolute;
-      top: 200px;
-      right: 200px;
-      }
-    #grasshopper {
-      width: 500px;
-      height: 364px;
-      position: absolute;
-      top: 400px;
-      right: 900px;
-      }        
-    #ladyBug {
-      width: 500px;
-      height: 318px;
-      position: absolute;
-      top: 500px;
-      right: 500px;
-      }                
-  </style>
-</head>
+  <head>
+    <title>Project</title>
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+    <script language="javascript" type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/v1.4.8.processing.min.js"></script>      
+    <script language="javascript" type="text/javascript" src="js/project.js"></script>
+  </head>
   <body>
-  <p>This web page interfaces with an Arduino keyboard. Alternatively, you may scroll down for a digital keyboard.</p>
+    <p>This web page interfaces with an Arduino keyboard. Alternatively, you may scroll down for a digital keyboard.</p>
     <div id="background">
-      <img id="ant" onmouseover="function()" onmouseout="function()" border="0" src="images/ant.png" alt="Ant">
-      <img id="ladyBug" onmouseover="function()" onmouseout="function()" border="0" src="images/ladyBug.png" alt="ladyBug">
-      <img id="grasshopper" onmouseover="function()" onmouseout="function()" border="0" src="images/grasshopper.png" alt="grasshopper">
-      <img id="butterfly" onmouseover="function()" onmouseout="function()" border="0" src="images/butterfly.png" alt="butterfly">
+      <div id="ant" alt="Ant"></div>
+      <div id="ladyBug" alt="ladyBug"></div>
+      <div id="grasshopper" alt="grasshopper"></div>
+      <div id="butterfly" alt="butterfly"></div>
     </div>
-    <div style="height:140px;background-color:#C0C0C0">
-      <img id="keyboard" src="images/keyboard.png" width="396" height="170" border="0" usemap="#keyboardMap"/>
-        <map name="keyboardMap">
-          <!-- #$-:Image map file created by GIMP Image Map plug-in -->
-          <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
-          <!-- #$-:Please do not edit lines starting with "#$" -->
-          <!-- #$VERSION:2.3 -->
-          <!-- #$AUTHOR:e_cor -->
-          <area shape="poly" coords="0,64,13,53,112,109,118,104,191,143,173,166" alt="C note"
-              onmouseover="function() {
-              }
-              onmouseout="function() {
-              }
-              nohref="nohref"/>
-          
-          <area shape="poly" coords="122,101,141,86,210,121,193,140" alt="D note"
-              onmouseover="function() {
-              }
-              onmouseout="function() {
-              }
-              nohref="nohref"/>
-          
-          <area shape="poly" coords="144,85,148,80,132,72,131,68,57,33,73,33,224,104,211,118" alt="E note"
-           onmouseover="function() {
-              }
-              onmouseout="function() {
-              }
-              nohref="nohref"/>
-          
-          <area shape="poly" coords="72,30,226,101,238,90,177,64,172,66,83,28" alt="F note"
-           onmouseover="function() {
-              }
-              onmouseout="function() {
-              }
-              nohref="nohref"/>
-        </map>
-    </div>
+    <div style="height:160px;background-color:#C0C0C0">
+      <img id="keyboard" src="images/keyboard.png" width="396" height="170" usemap="#keyboardMap"/>
+      <map name="keyboardMap">
+        <area id="cNote" shape="poly" coords="100,123,117,104,191,143,172,165" alt="C note"/>
+        <area id="dNote" coords="121,102,140,87,209,121,194,140" alt="D note"/>
+        <area id="eNote" coords="143,85,158,73,225,104,211,118" alt="E note"/>
+        <area id="fNote" coords="163,73,176,64,237,90,227,102" alt="F note"/>
+      </map>
+    
   </body>
 </html>

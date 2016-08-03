@@ -8,10 +8,11 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/serif.css">
-
+                    
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="css/zenburn.css">
 
+       
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -24,8 +25,80 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+      
+				<section data-transition="convex-in">
+					<h2>Explorations through a Scattered Mind</h2>
+					<p>I'm typically not one for trivia or quotes; however, I absolutely love Mary Shelley. She was brilliant. The following words of hers have always especially moved me...</p>
+					<blockquote>"...nothing contributes so much to tranquillize the mind as a steady purpose&#8209;&#8209;a point on which the soul may fix its intellectual eye."<br><br>&#8209;&#8209;Frankenstein (The Modern Prometheus)
+					</blockquote>
+				</section>
+        
+				<section>
+					<section id="fragments">
+						<h2>Unfortunately,</h2>
+						<p class="fragment grow">my mind...</p>
+						<p><span class="fragment fade-up">is anything ...</span>
+						<p><span class="fragment fade-up">but</span>
+            <span class="fragment fade-up">tranquil.</span></p>
+            
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+					<section>
+						<p>Here are some <a href="thoughts.html" target="_blank">common distractions muddling my mind</a>...</p>
+					</section>
+				</section>
+        
+        <section data-transition="convex-in">
+        <p>I tend to focus on minutiae. It took me quite a while to decide how I wanted to format my <a href="index.html" target="_blank">journal</a>.</p>
+        </section>
+        
+        <section data-transition="convex-in">
+          <section>
+            <p>I still haven't been able to fix my <a href="peopleCard/peopleCard.html" target="_blank">People Card </a>as I would like.</p>
+          </section>
+          <section>
+            <p>However, I have a whole bunch of <a href="peopleCard/imgLinks.html" target="_blank">cool images</a> which I formatted to what I thought would be the optimal size (150px x 150px) for the People Card.</p>
+          </section>
+          <section>
+            <p>Failing to get them to work within an array, I combined them all to make a little <a href="peopleCard/movieLink.html" target="_blank">movie </a>with the intention of playing it within the picture frame.</p>
+          </section>
+          <section>
+            <p>I also have this cool <a href="peopleCard/floatingImage.html" target="_blank">floating image </a>which I failed to incorporate.</p>
+          </section>
+        </section>
+        
+        <section data-transition="convex-in">
+          <section>
+            <p>So, for my <a href="project.html" target="_blank">project </a>, I wanted to make a user-interface for an Arduino project.<br><br>
+            I sketched my own images and wanted to make them responsive to both the Arduino project and an image map.<br><br>
+            The <a href="project.html" target="_blank">project </a> remains a work in progress.<br><br>
+            I found some cool snippets and swapped-out some code...</p>
+          </section>
+          <section>
+            <p>They could <a href="bouncingImage.html" target="_blank">bounce</a> off of the frames...</p>
+          </section>
+          <section>
+            <p>or <a href="floatingImages.html" target="_blank">float</a>...</p>   
+          </section>
+          <section>
+            <p>or <a href="imageFollowsCursor.html" target="_blank">follow the cursor</a>...</p>
+          </section>
+          <section>
+            <p>or <a href="trailingImages.html" target="_blank">several images could follow the cursor</a>...</p>
+          </section>
+          <section>
+            <p>I could cut the images up into several components and animate them with css <a href="wind.html" target="_blank">something like this</a>...</p>
+          </section>
+          <section>
+            <p>If only I could make the keyboard image map <a href="hoverCoords.html" target="_blank">responsive</a> to the correct coordinates...</p>
+          </section>
+          <section>
+            <p>Then I could sleep peacefully in a <a href="sky.html" target="_blank">magical land</a> under twinkling stars.</p>
+          </section>
+        </section>
+        
 			</div>
 		</div>
 
@@ -46,5 +119,21 @@
 				]
 			});
 		</script>
+    <script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				center: true,
+				history: true,
+
+				// transition: 'slide',
+				// transitionSpeed: 'slow',
+				// backgroundTransition: 'slide'
+			});
+
+		</script>
+
 	</body>
 </html>
